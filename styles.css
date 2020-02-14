@@ -25,6 +25,7 @@ body{
     top: 400px;
     width: 100%;
     left: 0px;
+    margin-top:10000px;
 }
 button{
     display: none;
@@ -83,7 +84,8 @@ button{
     height: 80px;
     color: ivory;
     animation: pulser 2s ease-in-out infinite;
-
+    margin-top:10000px;
+    
 }
 .db{
     display: block;
