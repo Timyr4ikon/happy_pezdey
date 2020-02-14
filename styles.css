@@ -1,0 +1,147 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    width: 320px;
+}
+
+.first-img{
+    position: absolute;
+    display: none;
+    top: 400px;
+    width: 100%;
+    left: 0px;
+}
+button{
+    display: none;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color:palevioletred;
+    text-transform: uppercase;
+    color: snow;
+}
+
+.q{
+    margin-left: 150px;
+    border-radius: 50% ;
+    display: none;
+     animation: pulse 2s ease-in-out infinite;
+}
+.w{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: firebrick;
+    font-size: 10px;
+    animation: pulse 2s ease-in-out infinite;
+
+}
+.e{
+    margin: 0 auto;
+    height: auto;
+    width: 80px;
+    border-radius: 10px;
+    background-color: lawngreen;
+    color: black;
+    animation: ee 14s ease-in-out infinite;
+
+}
+.r{
+    margin-top: 20px;
+    background-color: black;
+    color: darkmagenta;
+    border-radius: 50%;
+    animation: rr 2s linear infinite;
+
+}
+.t{
+    margin-left: 200px;
+    background-color: #fff;
+    color: black;
+    border: 1px double darkgoldenrod;
+    animation: t 4s ease-in-out ;
+
+}
+.y{
+    margin-top: 100px;
+    width: 100%;
+    height: 80px;
+    color: ivory;
+    animation: pulser 2s ease-in-out infinite;
+
+}
+.db{
+    display: block;
+}
+.opa{
+    opacity: 0;
+}
+@keyframes pulse {
+    from {
+      transform: scale(.85);
+    }
+    50% {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(.85);
+    }
+  }
+  @keyframes pulser {
+    from {
+      transform: scale(.85);
+      background-color: #fff;
+    }
+    50% {
+      transform: scale(1);
+    background-color: indigo;
+
+    }
+    to {
+      transform: scale(.85);
+      background-color: #fff;
+
+    }
+}
+  @keyframes t {
+    from {
+        transform: rotate(0deg);
+        }
+    to {
+      transform: rotate(36000000000000000deg);
+    }
+  }
+  @keyframes ee {
+    from {
+        transform: scale(1);
+        }
+    to {
+        transform: scale(200);
+
+    }
+  }
+  @keyframes rr {
+    from {
+        transform: rotate(0deg);
+        }
+    to {
+        transform: rotate(360deg);
+
+    }
+  }
+
